@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png?v=2">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body class="index body-works">
+    <div class="mobile-notice">
+        🚧 This website is still in progress — for the best experience, view it on a laptop.
+    </div>
+    <header>
+        <!-- Logo + hamburger knop (altijd zichtbaar op mobile, logo verborgen op desktop) -->
+        <div class="header-top">
+            <a href="index.html">
+                <img class="logo" src="../images/logo.png" alt="logo">
+            </a>
+            <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav: slide-up menu -->
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li class="liAppear"><a href="index.html">Home</a></li>
+                <li class="liAppear"><a href="works.html">Works</a></li>
+                <li class="liAppear"><a href="more.html">More</a></li>
+                <li class="liAppear">
+                    <a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="liAppear">
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Desktop nav: bubbel nav -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><img src="../images/nav-home.svg" alt="Home"></a></li>
+                <li><a href="works.html"><img src="../images/nav-works.svg" alt="Works"></a></li>
+                <li><a href="more.html"><img src="../images/nav-more.svg" alt="More"></a></li>
+                <li><a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/nav-mail.png" alt="Mail">
+                </a></li>
+                <li>
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/nav-linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="index-main works-main">
+        <div class="works-container">
+            <a class="works-item" href="buddy-prep.html">
+                <div class="works-item-content"></div>
+            </a>
+            <a class="works-item" href="#">
+                <div class="works-item-content"></div>
+            </a>
+            <a class="works-item" href="#">
+                <div class="works-item-content"></div>
+            </a>
+            <a class="works-item" href="#">
+                <div class="works-item-content"></div>
+            </a>
+            <a class="works-item" href="#">
+                <div class="works-item-content"></div>
+            </a>
+            <a class="works-item" href="#">
+                <div class="works-item-content"></div>
+            </a>
+        </div>
+    </main>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

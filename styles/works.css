@@ -1,0 +1,36 @@
+.works-main {
+    padding: var(--size-3xl);
+    padding-top: 8vw;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    height: 70vh;
+    width: 80vw;
+}
+
+.works-item {
+    background-color: #FEFFEA;
+    box-shadow: -2px 4px 0px rgb(0 0 0 / 0.1);
+    transition: transform 0.3s ease;
+    padding: 0.7rem;
+
+    & .works-item-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        background-color: #FBD5C1;
+    }
+}
+
+/* Eerste item gekanteld */
+.works-item:hover {
+    transform: rotate(-5deg);
+    transform-origin: center;
+}

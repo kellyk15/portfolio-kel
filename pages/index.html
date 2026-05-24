@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png?v=2">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body class="index">
+    <div class="mobile-notice">
+        🚧 This website is still in progress — for the best experience, view it on a laptop.
+    </div>
+
+    <header>
+        <!-- Logo + hamburger knop (altijd zichtbaar op mobile, logo verborgen op desktop) -->
+        <div class="header-top">
+            <a href="index.html">
+                <img class="logo" src="../images/logo.png" alt="logo">
+            </a>
+            <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav: slide-up menu -->
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li class="liAppear"><a href="index.html">Home</a></li>
+                <li class="liAppear"><a href="works.html">Works</a></li>
+                <li class="liAppear"><a href="more.html">More</a></li>
+                <li class="liAppear">
+                    <a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="liAppear">
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Desktop nav: bubbel nav -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html"><img src="../images/nav-home.svg" alt="Home"></a></li>
+                <li><a href="works.html"><img src="../images/nav-works.svg" alt="Works"></a></li>
+                <li><a href="more.html"><img src="../images/nav-more.svg" alt="More"></a></li>
+                <li><a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/nav-mail.png" alt="Mail">
+                </a></li>
+                <li>
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/nav-linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index-main">
+        <input type="checkbox" id="character-toggle" class="character-checkbox">
+        
+        <label for="character-toggle" class="character-container">
+            <img src="../images/kel-animalcrossing.png" alt="Character" class="character-image">
+            <img src="../images/kel-animalcrossing-head.png" alt="Character head" class="character-image">
+        </label>
+
+        <div class="menu-container">
+            <button class="menu-item" popovertarget="popover-about"><img src="../images/menu-item-img-1.png" alt=""></button>
+            <button class="menu-item" popovertarget="popover-2"><img src="../images/menu-item-img-2.png" alt=""></button>
+            <button class="menu-item" popovertarget="popover-3"><img src="../images/menu-item-img-3.png" alt=""></button>
+            <button class="menu-item" popovertarget="popover-4"><img src="../images/menu-item-img-4.png" alt=""></button>
+            <button class="menu-item" popovertarget="popover-5"><img src="../images/menu-item-img-5.png" alt=""></button>
+        </div>
+    </main>
+
+    <div id="popover-about" popover>
+        <div class="popover-about-container">
+            <button popovertarget="popover-about" popovertargetaction="hide" class="popover-close">✕</button>
+            
+            <section class="about-me-container">
+                <div class="about-me-info">
+                    <h1>About me</h1>
+                    <img src="../images/kelly.png" alt="">
+                    <div class="about-me-info-text">
+                        <p>
+                            Hi! My name is Kelly and i'm currently a <strong>3rd year communication and multimedia design student</strong>  at the Amsterdam University of Applied Sciences (HvA) and I completed my first year of study Cum Laude.
+                        </p>
+
+            
+                        <p>
+                            So far I have learned quite a lot and worked on a ton of projects from designing prototypes in <strong>Figma to programming website</strong>. Currently with a strong interest in <strong>UX design and front-end development</strong>.
+                        </p>
+            
+                        <p>
+                            I'm a pretty easy going person who is able to work individually and in teams. <strong>I'm always ready for new opportunities to improve myself and for new abilties!</strong>
+                        </p>
+            
+                        <p>
+                            Usually I can be a bit introverted, but I have tried to push myself <strong>out of my own comfort zone</strong> by teaching adobe classes to CMD first year students in my second year and I even gave CMD info sessions to high school students to introduce them to the programme; I'm always seeking for fresh experiences.
+                        </p>
+                    </div>
+                    <button class="button-v1"><a href=https://www.linkedin.com/in/kelly-kha/"">Connect with me!</a></button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="popover-2" popover>
+        <div class="popover-about-container">
+            
+            <section class="skills-and-education"> 
+                <div class="title">
+                    <h2>My education —</h2>
+                    <button popovertarget="popover-2" popovertargetaction="hide" class="popover-close">✕</button>
+                </div>
+
+                <div class="skills-and-education-info">
+                    <div class="education-block">
+                        <h3>Education</h3>
+                        <p>
+                            <strong>September 2023 - Present</strong><br>
+                            <em>Amsterdam University of Applied Sciences (HvA)</em><br>
+                            Communication and multimedia design
+                        </p>
+
+                        <img src="../images/education.png" alt="">
+                    </div>
+
+                    <!-- <div class="experience-block">
+                        <h3>Experience</h3>
+                        <div class="experience-info">
+                            <div>
+                                <p>
+                                    <strong>April 2025 - August 2025</strong><br>
+                                    <em>Ecocharting, Utrecht</em><br>
+                                    UX/UI Intern → Part-time position (summer)
+                                </p>
+                            </div>
+                            <div>
+                                <p><strong>Extracurricular Activities</strong></p>
+                                <ul>
+                                    <li>Delivered CMD info sessions to high school students</li>
+                                    <li>Taught Adobe classes to first-year CMD students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h3>Soft skills</h3>
+                        <ul>
+                            <li>Time management</li>
+                            <li>Team player</li>
+                            <li>Goal oriented</li>
+                            <li>Fast learner</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="popover-3" popover>
+        <div class="popover-about-container">
+            <button popovertarget="popover-3" popovertargetaction="hide" class="popover-close">✕</button>
+            
+            <section class="skills-and-education"> 
+                <h2>My skills —</h2>
+
+                <div class="skills-and-education-info">
+
+                    <div class="experience-block">
+                        <h3>Experience</h3>
+                        <div class="experience-info">
+                            <div>
+                                <p>
+                                    <strong>April 2025 - August 2025</strong><br>
+                                    <em>Ecocharting, Utrecht</em><br>
+                                    UX/UI Intern → Part-time position (summer)
+                                </p>
+                            </div>
+                            <div>
+                                <p><strong>Extracurricular Activities</strong></p>
+                                <ul>
+                                    <li>Delivered CMD info sessions to high school students</li>
+                                    <li>Taught Adobe classes to first-year CMD students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h3>Soft skills</h3>
+                        <ul>
+                            <li>Time management</li>
+                            <li>Team player</li>
+                            <li>Goal oriented</li>
+                            <li>Fast learner</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="popover-4" popover>
+        <div class="popover-about-container">
+            <button popovertarget="popover-4" popovertargetaction="hide" class="popover-close">✕</button>
+
+            <section class="outside-of-design">
+                <h2>Outside of design —</h2>
+                <img src="../images/hobby.png" alt="">
+
+                <div>
+                    <p>
+                        In my free time you'll probably find me somewhere in a cafe or any other cozy space drawing, reading, watching a movie, trying out new food spots or with friends.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="popover-5" popover>
+        <div class="popover-about-container">
+            <button popovertarget="popover-5" popovertargetaction="hide" class="popover-close">✕</button>
+
+            <section class="old-portfolio">
+                <h2>My old portfolio —</h2>
+                <p>Curious about my previous work?</p>
+                <img src="../images/kel.png" alt="">
+                <button class="button-v1"><a href="https://kellykha.com" target="_blank" rel="noopener noreferrer">View my old portfolio
+                </a></button>
+                
+            </section>
+        </div>
+    </div>
+    <!-- <div id="popover-3" popover>Inhoud 3</div> -->
+    <!-- <div id="popover-4" popover>Inhoud 4</div> -->
+    <!-- <div id="popover-5" popover>Inhoud 5</div> -->
+
+
+    <script src="../scripts/script.js"></script>
+    <!-- <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const logo = document.querySelector('.logo');
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileNav.classList.toggle('toonmenu');
+            menuBtn.classList.toggle('is-open', isOpen);
+            logo.classList.toggle('is-visible', isOpen);
+            menuBtn.setAttribute('aria-expanded', isOpen);
+            mobileNav.setAttribute('aria-hidden', !isOpen);
+        });
+    </script> -->
+</body>
+</html>

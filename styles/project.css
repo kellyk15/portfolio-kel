@@ -1,0 +1,170 @@
+/* https://claude.ai/chat/780421e9-8976-4a8b-96a4-9395a7766117 */
+
+.wood-bg {
+    padding: 2rem;
+  background-color: #EAAF70;
+  background-image:
+    /* Fijne nerf */
+    repeating-linear-gradient(
+      2deg,
+      transparent 0px, transparent 3px,
+      rgba(160,97,42,.08) 3px, rgba(160,97,42,.08) 4px
+    ),
+    /* Middelgrote nerf */
+    repeating-linear-gradient(
+      179deg,
+      transparent 0px, transparent 9px,
+      rgba(196,122,58,.12) 9px, rgba(196,122,58,.12) 11px,
+      transparent 11px, transparent 18px
+    ),
+    /* Brede nerfbanden */
+    repeating-linear-gradient(
+      1deg,
+      transparent 0px, transparent 22px,
+      rgba(253,232,196,.18) 22px, rgba(253,232,196,.18) 28px,
+      transparent 28px, transparent 60px,
+      rgba(160,97,42,.10) 60px, rgba(160,97,42,.10) 68px,
+      transparent 68px, transparent 90px
+    ),
+    /* Kwastgaten */
+    radial-gradient(ellipse 60px 30px at 20% 35%,
+      rgba(120,60,10,.13) 0%, transparent 100%),
+    radial-gradient(ellipse 80px 20px at 70% 70%,
+      rgba(100,50,8,.10) 0%, transparent 100%);
+}
+
+.project-main-container{
+    background-color: #EBE7CC;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--size-5xl);
+    padding: var(--size-xl);
+}
+
+.project-container {
+    background-color: #E5DEC1;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: var(--size-4xl);
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
+    padding: var(--size-xl);
+}
+
+@media (max-width: 767px) {
+    .project-container {
+        grid-template-columns: 1fr;
+        overflow-y: scroll;
+    }
+}
+
+.project-item-image {
+    /* background-color: #d9b139; */
+    width: 100%;
+    height: 100%;
+    border-radius: var(--size-4xl);
+}
+
+.project-item{
+    /* background-color: #FBD5C1; */
+    width: 100%;
+    height: 100%;
+    /* border-radius: var(--size-4xl); */
+}
+
+.back-btn{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.project-btn{
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+}
+
+.project-item-image{
+    position: relative;
+    & hr {
+        border: none;
+        background-image: repeating-linear-gradient(
+            to right,
+            var(--colour-brown) 0px,
+            var(--colour-brown) 10px,
+            transparent 10px,
+            transparent 20px 
+        );
+        height: 3px;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+}
+.project-item-image-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--colour-brown);
+  font-weight: 200;
+
+  & img {
+    width: 40px;
+    height: 40px;
+  }
+
+  & h1::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/project-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+}
+
+.project-item-image-title h1 {
+    font-family: 'Sour Gummy', sans-serif;
+    font-weight: 400;
+}
+
+.project-image-container {
+    background-color: rgb(131 92 37 / 0.2);
+    border-radius: var(--size-xl);
+    display:grid;
+    place-items: center;
+    width: 100%;
+    padding: var(--size-xl);
+    margin-top: var(--size-xl);
+
+    & img {
+        width: 70%;
+    }
+}
+
+.project-item{
+    color: var(--colour-brown);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-lg);
+    overflow-y: auto;
+}
+
+.context-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-lg);
+}
+
+.project-item-section{
+    background-color: rgb(131 92 37 / 0.2);
+    border-radius: var(--size-xl);
+    padding: var(--size-xl);
+
+}
