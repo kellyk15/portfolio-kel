@@ -3,6 +3,10 @@
     padding-top: 8vw;
 }
 
+.works-main .works-container {
+    margin-top: 6vw;
+}
+
 .works-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

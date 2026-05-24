@@ -166,5 +166,33 @@
     background-color: rgb(131 92 37 / 0.2);
     border-radius: var(--size-xl);
     padding: var(--size-xl);
+    border: solid 2px transparent;
+    transition: all 0.3s ease;
 
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6),
+    &:nth-child(8) {
+        background-color: #DFD7B3;
+        
+        &:hover {
+            background-color: rgb(131 92 37 / 0.2);
+        }
+    }
+
+}
+
+.project-item-section:hover{
+    /* animation: scaleDown 0.3s ease forwards; */
+    border: solid 2px rgb(131 92 37 / 0.4);
+    background-color: rgb(131 92 37 / 0.3);
+}
+
+@keyframes scaleDown {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.95);
+    }
 }
