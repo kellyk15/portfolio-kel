@@ -441,12 +441,11 @@ header {
 
 /* ─── DESKTOP NAV (bubbels) ─── */
 .desktop-nav {
-    display: none; /* verborgen op mobile */
+    display: none;
 
     position: relative;
-    width: 45%;
-    max-width: 500px;
-    height: 8vw;
+    width: clamp(300px, 45%, 500px);
+    height: 70px;
     max-height: 90px;
 
     background-image: url('../images/nav-background.svg');
@@ -466,7 +465,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2vw;
+    gap: 1.5rem;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -474,8 +473,8 @@ header {
 }
 
 .desktop-nav ul li img {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 32px;
+    height: 32px;
     max-width: 40px;
     max-height: 40px;
     object-fit: contain;
