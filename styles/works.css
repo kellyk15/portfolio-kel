@@ -33,6 +33,72 @@
     }
 }
 
+.works-item .works-item-content {
+    background-size: cover;
+    background-position: center;
+}
+
+.works-item:nth-child(1) .works-item-content {
+    background-image: url('../images/cover-buddy-prep.png');
+}
+
+.works-item:nth-child(2) .works-item-content {
+    background-image: url('../images/cover-dunkin.png');
+}
+
+.works-item:nth-child(3) .works-item-content {
+    background-image: url('../images/cover-beyond.png');
+}
+
+.works-item:nth-child(4) .works-item-content {
+    background-image: url('../images/cover-content.png');
+}
+
+.works-item:nth-child(5) .works-item-content {
+    background-image: url('../images/cover-browser.png');
+}
+
+.works-item:nth-child(6) .works-item-content {
+    background-image: url('../images/cover-more.png');
+}
+
+
+.works-item::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -60px; /* boven de knop */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.works-item:hover::after {
+    opacity: 1;
+}
+
+.works-item:nth-child(1):hover::after {
+    background-image: url('../images/text-bubble-06.png');
+}
+.works-item:nth-child(2):hover::after {
+    background-image: url('../images/text-bubble-07.png');
+}
+.works-item:nth-child(3):hover::after {
+    background-image: url('../images/text-bubble-06.png');
+}
+.works-item:nth-child(4):hover::after {
+    background-image: url('../images/text-bubble-06.png');
+}
+.works-item:nth-child(5):hover::after {
+    background-image: url('../images/text-bubble-07.png');
+}
+
 /* Eerste item gekanteld */
 .works-item:hover {
     transform: rotate(-5deg);

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png?v=2">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body class="index">
+    <div class="mobile-notice">
+        🚧 This website is still in progress — for the best experience, view it on a laptop.
+    </div>
+
+    <main class="index-main wood-bg browser-tech-main">
+        <div class="project-main-container">
+            <div class="project-container">
+                <div class="project-item-image">
+                    <div class="project-item-image-title">
+                        <h1>Browser Tech</h1>
+                        <img src="../images/project-star.png" alt="">
+                    </div>
+                    <hr>
+                    <div class="project-item-image-title">
+                        <p>February - March 2026</p>
+                        <p>UX/UI design · Front-end development</p>
+                        <p>VS Code · HTML/CSS/JS</p>
+                    </div>
+
+                    <div class="project-image-container">
+                        <img src="../images/projects/works-bt-1.png" alt="Browser Tech project image">
+                    </div>
+
+                    <button class="button-v1 project-btn">
+                        <a href="https://github.com/kellyk15/web-dd-bt-kelly" target="_blank" rel="noopener noreferrer">view repository</a>
+                    </button>
+                </div>
+
+                <div class="project-item">
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Context</h2>
+                        <div class="context-info">
+                            <p>For this course I had to build an inheritance tax form, styled after NS (Dutch Railways). The core requirement: the form had to work fully without Javascript, but become better with it — a concept known as <strong>progressive enhancement</strong>.</p>
+                            <p>There was also a strong focus on usability and accessibility: the form had to work for everyone, including people who only use a keyboard or a screen reader.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Approach & Process</h2>
+                        <div class="context-info sue-if">
+                            <div>
+                                <h3 class="works-subheading-2">Week 1</h3>
+                                <p><strong>Orientation & HTML foundation</strong></p>
+                                <p>Read articles about forms, attended validation workshops. Set up the first HTML structure using fieldset.</p>
+                            </div>
+                            <div>
+                                <h3 class="works-subheading">Week 2</h3>
+                                <p><strong>Styling & progressive disclosure</strong></p>
+                                <p>Built out the CSS in NS style. Questions expand and collapse based on previous answers — working without Javascript using CSS nesting.</p>
+                            </div>
+                            <div>
+                                <h3 class="works-subheading-3">Week 3</h3>
+                                <p><strong>Second pattern & validation</strong></p>
+                                <p>Built the second form pattern: adding and individually removing beneficiaries. Added custom JavaScript validation using aria-invalid, aria-describedby and aria-live.</p>
+                            </div>
+                            <div>
+                                <h3 class="works-subheading-2">Week 4</h3>
+                                <p><strong>Refinement & extra features</strong></p>
+                                <p>Local storage & reset confirmation via dialog, dark/light mode, unlimited beneficiaries via innerHTML, improved radio button styling and keyboard accessibility.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Progressive disclosure — no Javascript required</h2>
+                        <div class="context-info">
+                            <p>Follow-up questions expand and collapse based on previous answers. So it functions even when Javascript is disabled, ensuring no user is locked out of the form flow.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Screen reader-friendly validation</h2>
+                        <div class="context-info">
+                            <p>Error messages are announced to screen readers using <code>aria-live="polite"</code> and linked to their inputs via <code>aria-describedby</code>. Invalid fields are flagged with <code>aria-invalid="true"</code>, and visual errors are powered by <code>:user-invalid</code> in CSS — so feedback is clear for both sighted and non-sighted users.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Contextual tooltips with &lt;details&gt;</h2>
+                        <div class="context-info">
+                            <p>Clarifying information for complex questions is tucked inside native <code>&lt;details&gt;</code> elements. These are keyboard-accessible and semantic, requiring no extra Javascript or ARIA tricks.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Keyboard accessibility for radio buttons</h2>
+                        <div class="context-info">
+                            <p>Hiding radio buttons with <code>display:none</code> makes them invisible to keyboards and screen readers. I fixed this using <code>position: absolute</code> with <code>width/height: 0</code>, keeping them in the DOM while adding a clearly visible focus state.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Safe reset with &lt;dialog&gt; confirmation</h2>
+                        <div class="context-info">
+                            <p>Resetting a long form by accident is frustrating. A native <code>&lt;dialog&gt;</code> element asks for confirmation before clearing all data, protecting users from losing their progress.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Autocomplete with &lt;datalist&gt;</h2>
+                        <div class="context-info">
+                            <p>Certain fields use a native <code>&lt;datalist&gt;</code> element to suggest options as the user types. This reduces input errors and speeds up form completion without any custom Javascript — and it works with screen readers and keyboard navigation out of the box.</p>
+                        </div>
+                    </section>
+
+                    <section class="project-item-section">
+                        <h2 class="works-subheading">Reflection</h2>
+                        <div class="context-info">
+                            <p>Building forms is much harder than I expected. There's a lot more to usability, validation and accessibility than just putting a few inputs on a page.</p>
+                            <p>This was a genuinely challenging project that pushed me well outside my comfort zone. Combining accessibility, validation and progressive enhancement all at once was entirely new to me. Looking back, I'm proud of what I built — and I'll never underestimate forms again.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <button class="button-v2 back-btn">
+            <a href="works.html">back</a>
+        </button>
+
+    </main>
+
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/browsertech.js"></script>
+</body>
+
+</html>

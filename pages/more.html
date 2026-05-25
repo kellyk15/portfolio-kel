@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png?v=2">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body class="index">
+    <div class="mobile-notice">
+        🚧 This website is still in progress — for the best experience, view it on a laptop.
+    </div>
+
+    <!-- <div class="stars-container" id="stars"></div> -->
+
+    <header>
+        <!-- Logo + hamburger knop (altijd zichtbaar op mobile, logo verborgen op desktop) -->
+        <div class="header-top">
+            <a href="index-wo-loader.html">
+                <img class="logo" src="../images/logo.png" alt="logo">
+            </a>
+            <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav: slide-up menu -->
+        <nav class="mobile-nav" aria-hidden="true">
+            <ul>
+                <li class="liAppear"><a href="index-wo-loader.html">Home</a></li>
+                <li class="liAppear"><a href="works.html">Works</a></li>
+                <li class="liAppear"><a href="more.html">More</a></li>
+                <li class="liAppear">
+                    <a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="liAppear">
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Desktop nav: bubbel nav -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index-wo-loader.html"><img src="../images/nav-home.svg" alt="Home"></a></li>
+                <li><a href="works.html"><img src="../images/nav-works.svg" alt="Works"></a></li>
+                <li><a href="more.html"><img src="../images/nav-more.svg" alt="More"></a></li>
+                <li><a href="mailto:kellyh.kha@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../images/nav-mail.png" alt="Mail">
+                </a></li>
+                <li>
+                    <a href="http://www.linkedin.com/in/kelly-kha" target="_blank" rel="noopener noreferrer">
+                        <img src="../images/nav-linkedin.png" alt="LinkedIn icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index-main more-main">
+        <div class="more-container">
+            <!-- 10 divs per keer -->
+            <div class="more-item-container">
+                <div class="more-item" data-titel="T-shirt designing & printing" data-beschrijving="I designed my own t-shirt for a concert and printed them on a shirt using a heat press." data-img="../images/more/more.png" data-img2="../images/more/more-1.png">
+                    <img src="../images/more-item-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="Mini magnets" data-beschrijving="For the project beyond I made mini magnets of our groupmembers in the style of our character" data-img="../images/more/more-3.png">
+                    <img src="../images/more-item-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="Informative mini zines" data-beschrijving="For my minor behavior design, I created informative mini zines about parasocial relationships" data-img="../images/more/more-5.png" data-img2="../images/more/more-6.png" data-link="https://www.figma.com/proto/nB6oIAykLVNHRTD2YS6OZW/bd-verdieping?node-id=189-2&p=f&viewport=63%2C302%2C0.16&t=mFKPKMNZlNCMRrBE-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=189%3A236">
+                    <img src="../images/more-item-3.png" alt="">
+                </div>
+            </div>
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="Design for led columns @ internship" data-beschrijving="At my internship, I designed LED columns for their experience day." data-img="../images/more/more-4.png">
+                    <img src="../images/more-item-4.png" alt="">
+                </div>
+            </div>
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="Pizza maker game" data-beschrijving="In my first year I made a pizza maker game using javascript for the first time with my own illustrations." data-img="../images/more/more-7.png" data-link="https://kellyk15.github.io/pizza-maker/">
+                    <img src="../images/more-item-5.png" alt="">
+                </div>
+            </div>
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="Memory game with biases" data-beschrijving="During my minor behavior design, I created a memory game that highlights cognitive biases. To play the play you have to adjust the size to fit width and height" data-img="../images/more/more-8.png" data-link="https://www.figma.com/proto/nqTeaacAsbE248sefwvYR5/BD-portfolio?node-id=154-9554&page-id=53%3A74&starting-point-node-id=154%3A9554&scaling=scale-down&content-scaling=fixed&show-proto-sidebar=1&t=AI1fbLhOYggIZzlh-1">
+                    <img src="../images/more-item-6.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            
+
+            <div class="more-item-container">
+                <div class="more-item" data-titel="My illustrations" data-img="../images/more/more-art.png">
+                    <img src="../images/more-item-7.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item" data-titel="My illustrations" data-img="../images/more/more-art-2.png">
+                    <img src="../images/more-item-8.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item" data-titel="My illustrations" data-img="../images/more/more-art-3.png">
+                    <img src="../images/more-item-9.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item" data-titel="My illustrations" data-img="../images/more/more-art-4.png">
+                    <img src="../images/more-item-10.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+            <div class="more-item-container">
+                <div class="more-item">
+                    <img src="../images/more-item-disabled.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <div id="popover-overlay"></div>
+
+    <div id="popover">
+        <div class="texturelayer"></div>
+        <button class="popover-close" id="popover-close" aria-label="Sluiten">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <h2 id="popover-titel"></h2>
+        <p id="popover-beschrijving"></p>
+        <div id="popover-img-container">
+            <img id="popover-img" src="" alt="">
+            <img id="popover-img-2" src="" alt="">
+        </div>
+        <a id="popover-link" href="#" target="_blank" class="popover-btn">View project →</a>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+    
+    <script>
+        const popover = document.getElementById('popover');
+        const overlay = document.getElementById('popover-overlay');
+
+        function openPopover() {
+            overlay.classList.add('active');
+            requestAnimationFrame(() => popover.classList.add('active'));
+        }
+
+        function closePopover() {
+            popover.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+        document.querySelectorAll('.more-item').forEach(item => {
+            item.addEventListener('click', () => {
+                if (!item.dataset.titel) return;
+
+                document.getElementById('popover-titel').textContent = item.dataset.titel;
+                document.getElementById('popover-beschrijving').textContent = item.dataset.beschrijving;
+
+                const imgEl = document.getElementById('popover-img');
+                if (item.dataset.img) {
+                    imgEl.src = item.dataset.img;
+                    imgEl.style.display = 'block';
+                } else {
+                    imgEl.style.display = 'none';
+                }
+
+                const imgEl2 = document.getElementById('popover-img-2');
+                if (item.dataset.img2) {
+                    imgEl2.src = item.dataset.img2;
+                    imgEl2.style.display = 'block';
+                } else {
+                    imgEl2.style.display = 'none';
+                }
+
+                const linkEl = document.getElementById('popover-link');
+                if (item.dataset.link) {
+                    linkEl.href = item.dataset.link;
+                    linkEl.style.display = 'inline-block';
+                } else {
+                    linkEl.style.display = 'none';
+                }
+
+                openPopover();
+            });
+        });
+
+        overlay.addEventListener('click', closePopover);
+
+        document.querySelector('.popover-close').addEventListener('click', closePopover);
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closePopover();
+        });
+    </script>
+</body>
+</html>

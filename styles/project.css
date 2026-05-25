@@ -243,3 +243,7 @@
 .buddy-prep-main .project-item-section:nth-child(6) ul {
     padding-left: 1.5rem;
 }
+
+.project-item-section ul {
+    padding-left: 1.5rem;
+}
