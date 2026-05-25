@@ -216,7 +216,7 @@ body::after {
     border: none;
     border-radius: 50px;
     padding: var(--size-xs) var(--size-sm);
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
     align-items: center;
     gap: var(--size-xs);
@@ -252,7 +252,7 @@ body::after {
     border: none;
     border-radius: 50px;
     padding: var(--size-xs) var(--size-sm);
-    cursor: pointer;
+    /* cursor: pointer; */
     display: flex;
     align-items: center;
     gap: var(--size-xs);
@@ -393,7 +393,7 @@ header {
     position: relative;
     background: none;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 0;
 }
 
@@ -552,7 +552,7 @@ header {
     aspect-ratio: 1 / 1;
 
     &:hover {
-        cursor: pointer;
+        /* cursor: pointer; */
 
         & .character-image:nth-child(2) {
             transform: rotate(10deg) translate(-18px, 0);
@@ -602,7 +602,7 @@ header {
         /* background-color: rgb(234 175 112 / 0.8); */
         /* background-color: rgb(234 175 112); */
         background-color: #ea838c;
-        cursor: pointer;
+        /* cursor: pointer; */
         transform: scale(1.1);
     }
 }
@@ -633,7 +633,7 @@ header {
 
 /* Cursor op label */
 .character-container {
-    cursor: pointer;
+    /* cursor: pointer; */
 
     & .character-image:nth-child(2) {
         transition: transform 0.3s ease;
@@ -773,7 +773,7 @@ header {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-size: var(--size-base);
     display: grid;
     place-items: center;

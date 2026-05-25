@@ -47,3 +47,38 @@ if (container) {
         container.appendChild(star);
     }
 }
+
+
+// soundeffects
+const worksItems = document.querySelectorAll('.works-item')
+
+worksItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault()
+        
+        let muziek = new Audio("../pop.mp3")
+        muziek.play()
+
+        setTimeout(() => {
+            window.location.href = item.href
+        }, 200)
+    })
+})
+
+// works-item (links naar andere pagina)
+// document.querySelectorAll('.works-item').forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         new Audio("../pop.mp3").play()
+//         setTimeout(() => {
+//             window.location.href = item.href
+//         }, 200)
+//     })
+// })
+
+// more-item (opent popover, geen navigatie)
+document.querySelectorAll('.more-item').forEach(item => {
+    item.addEventListener('click', () => {
+        new Audio("../pop.mp3").play()
+    })
+})
