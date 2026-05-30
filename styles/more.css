@@ -179,3 +179,37 @@
     opacity: 0.2;
     pointer-events: none;
 }
+
+@media (max-width: 767px) {
+    .more-main .more-container {
+        margin-top: 24vw;
+        width: 90%;
+        height: 80vh;
+        overflow-y: scroll;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .index-main.more-main{
+        align-items: flex-start;
+    }
+
+    .more-body{
+        & .menu-btn svg{
+            color: var(--colour-brown);
+        }
+    }
+
+    #popover {
+        & #popover-beschrijving{
+            max-width: 90%;
+        }
+    }
+
+    #popover-img-container {
+        flex-direction: column;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

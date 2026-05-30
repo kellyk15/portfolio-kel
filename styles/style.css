@@ -872,3 +872,18 @@ header {
         width: 90%;
     }
 }
+
+
+/* responsive styles */
+
+@media (max-width: 767px) {
+    #popover-about,
+    #popover-2,
+    #popover-3,
+    #popover-4,
+    #popover-5 {
+        width: 85vw;
+        margin: 0 auto;
+        max-height: 80vh;
+    }
+}
